@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YKS Günlük Çalışma Takvimi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app">
+        <aside class="sidebar">
+            <h2>Çalışma Takvimi</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Takvim</a></li>
+                    <li><a href="#">Görevler</a></li>
+                    <li><a href="#">İlerleme</a></li>
+                    <li><a href="#">Ayarlar</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <h1>Bugünün Çalışma Planı</h1>
+                <p class="quote">"Başarı, azimle çalışanların ödülüdür."</p>
+            </header>
+            <section class="calendar">
+                <!-- Takvim ve günlük görevler burada olacak -->
+                <div class="date-header">
+                    <button id="prev-day" aria-label="Önceki Gün">&lt;</button>
+                    <h2 id="current-date">25 Mayıs 2026</h2>
+                    <button id="next-day" aria-label="Sonraki Gün">&gt;</button>
+                </div>
+                <ul class="task-list" id="task-list">
+                    <!-- Görevler JS ile yüklenecek -->
+                </ul>
+            </section>
+            <section class="progress">
+                <h3>Günlük İlerleme</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%;"></div>
+                </div>
+                <p id="progress-text">40% tamamlandı</p>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
